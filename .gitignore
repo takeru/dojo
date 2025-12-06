@@ -7,3 +7,6 @@
 # Student workspace - everything except .gitkeep
 workspace/*
 !workspace/.gitkeep
+
+# Learning progress (generated at runtime)
+state/progress.json

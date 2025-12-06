@@ -33,15 +33,117 @@
       "related_stages": [1]
     },
     {
+      "id": "stack-vs-heap",
+      "file": "stack-vs-heap.md",
+      "title": "スタックとヒープの違い",
+      "related_stages": [1]
+    },
+    {
+      "id": "clone-vs-copy",
+      "file": "clone-vs-copy.md",
+      "title": "CloneとCopyトレイトの違い",
+      "related_stages": [1]
+    },
+    {
+      "id": "ownership-patterns",
+      "file": "ownership-patterns.md",
+      "title": "所有権を渡す3つのパターン",
+      "related_stages": [1, 2]
+    },
+    {
+      "id": "drop-mechanism",
+      "file": "drop-mechanism.md",
+      "title": "Dropトレイトの仕組み",
+      "related_stages": [1]
+    },
+    {
+      "id": "string-vs-str",
+      "file": "string-vs-str.md",
+      "title": "Stringと&strの違い（所有権視点）",
+      "related_stages": [1, 2]
+    },
+    {
+      "id": "vec-ownership",
+      "file": "vec-ownership.md",
+      "title": "Vecと所有権",
+      "related_stages": [1, 2]
+    },
+    {
       "id": "borrow-checker",
       "file": "borrow-checker.md",
       "title": "借用チェッカーの仕組み",
       "related_stages": [2]
     },
     {
+      "id": "ref-vs-box",
+      "file": "ref-vs-box.md",
+      "title": "参照とBoxの違い",
+      "related_stages": [2]
+    },
+    {
+      "id": "interior-mutability",
+      "file": "interior-mutability.md",
+      "title": "内部可変性（RefCell/Cell）",
+      "related_stages": [2]
+    },
+    {
+      "id": "reborrowing",
+      "file": "reborrowing.md",
+      "title": "再借用のパターン",
+      "related_stages": [2]
+    },
+    {
+      "id": "slice-borrowing",
+      "file": "slice-borrowing.md",
+      "title": "スライスと借用",
+      "related_stages": [2]
+    },
+    {
+      "id": "method-self-variants",
+      "file": "method-self-variants.md",
+      "title": "メソッドのself引数パターン",
+      "related_stages": [2]
+    },
+    {
+      "id": "borrow-split",
+      "file": "borrow-split.md",
+      "title": "借用の分割",
+      "related_stages": [2]
+    },
+    {
       "id": "lifetime-elision",
       "file": "lifetime-elision.md",
       "title": "ライフタイム省略規則",
+      "related_stages": [3]
+    },
+    {
+      "id": "static-lifetime",
+      "file": "static-lifetime.md",
+      "title": "'staticライフタイム徹底解説",
+      "related_stages": [3]
+    },
+    {
+      "id": "lifetime-bounds",
+      "file": "lifetime-bounds.md",
+      "title": "ライフタイム境界",
+      "related_stages": [3]
+    },
+    {
+      "id": "hrtb-intro",
+      "file": "hrtb-intro.md",
+      "title": "高階ライフタイム入門",
+      "related_stages": [3]
+    },
+    {
+      "id": "lifetime-in-structs",
+      "file": "lifetime-in-structs.md",
+      "title": "構造体のライフタイム設計",
+      "related_stages": [3]
+    },
+    {
+      "id": "common-lifetime-errors",
+      "file": "common-lifetime-errors.md",
+      "title": "よくあるライフタイムエラー集",
       "related_stages": [3]
     }
   ]
