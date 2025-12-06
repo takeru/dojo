@@ -1,0 +1,237 @@
+{
+  "id": "rust-basics",
+  "name": "Rust基礎コース",
+  "description": "Rustの基本構文と制御構造を学ぶ入門コース",
+  "language": "rust",
+  "difficulty": "beginner",
+  "version": "1.0.0",
+  "estimated_hours": 12,
+  "prerequisites": [],
+  "total_stages": 6,
+  "stages": [
+    {
+      "stage": 1,
+      "file": "stage1-install.md",
+      "title": "環境構築"
+    },
+    {
+      "stage": 2,
+      "file": "stage2-hello.md",
+      "title": "Hello World"
+    },
+    {
+      "stage": 3,
+      "file": "stage3-variables.md",
+      "title": "変数と型"
+    },
+    {
+      "stage": 4,
+      "file": "stage4-functions.md",
+      "title": "関数"
+    },
+    {
+      "stage": 5,
+      "file": "stage5-control-flow.md",
+      "title": "制御フロー"
+    },
+    {
+      "stage": 6,
+      "file": "stage6-structs.md",
+      "title": "構造体"
+    }
+  ],
+  "topics": [
+    {
+      "id": "rust-toolchain",
+      "file": "rust-toolchain.md",
+      "title": "rustup/rustc/cargoの関係",
+      "related_stages": [1]
+    },
+    {
+      "id": "rust-update",
+      "file": "rust-update.md",
+      "title": "Rustを更新するには？",
+      "related_stages": [1]
+    },
+    {
+      "id": "rust-versions",
+      "file": "rust-versions.md",
+      "title": "複数バージョンの管理",
+      "related_stages": [1]
+    },
+    {
+      "id": "toolchain-explained",
+      "file": "toolchain-explained.md",
+      "title": "ツールチェーンって何？",
+      "related_stages": [1]
+    },
+    {
+      "id": "rust-install-location",
+      "file": "rust-install-location.md",
+      "title": "インストール場所",
+      "related_stages": [1]
+    },
+    {
+      "id": "cargo-internals",
+      "file": "cargo-internals.md",
+      "title": "cargo runの内部動作",
+      "related_stages": [2]
+    },
+    {
+      "id": "release-build",
+      "file": "release-build.md",
+      "title": "リリースビルド",
+      "related_stages": [2]
+    },
+    {
+      "id": "macros-intro",
+      "file": "macros-intro.md",
+      "title": "マクロ入門",
+      "related_stages": [2]
+    },
+    {
+      "id": "rustc-direct",
+      "file": "rustc-direct.md",
+      "title": "rustcはいつ使うの？",
+      "related_stages": [2]
+    },
+    {
+      "id": "binary-location",
+      "file": "binary-location.md",
+      "title": "実行バイナリはどこにあるの？",
+      "related_stages": [2]
+    },
+    {
+      "id": "cargo-toml",
+      "file": "cargo-toml.md",
+      "title": "Cargo.tomlの中身",
+      "related_stages": [2]
+    },
+    {
+      "id": "immutability-reasoning",
+      "file": "immutability-reasoning.md",
+      "title": "デフォルト不変の理由",
+      "related_stages": [3]
+    },
+    {
+      "id": "shadowing",
+      "file": "shadowing.md",
+      "title": "シャドーイング",
+      "related_stages": [3]
+    },
+    {
+      "id": "type-inference",
+      "file": "type-inference.md",
+      "title": "型推論の仕組み",
+      "related_stages": [3]
+    },
+    {
+      "id": "numeric-suffixes",
+      "file": "numeric-suffixes.md",
+      "title": "数値リテラルのサフィックス",
+      "related_stages": [3]
+    },
+    {
+      "id": "signed-unsigned",
+      "file": "signed-unsigned.md",
+      "title": "符号付きと符号なし整数",
+      "related_stages": [3]
+    },
+    {
+      "id": "float-pitfalls",
+      "file": "float-pitfalls.md",
+      "title": "浮動小数点数の注意点",
+      "related_stages": [3]
+    },
+    {
+      "id": "statement-expression",
+      "file": "statement-expression.md",
+      "title": "文と式の深掘り",
+      "related_stages": [4]
+    },
+    {
+      "id": "multi-step-functions",
+      "file": "multi-step-functions.md",
+      "title": "関数内での複数ステップ",
+      "related_stages": [4]
+    },
+    {
+      "id": "early-return",
+      "file": "early-return.md",
+      "title": "早期リターン",
+      "related_stages": [4]
+    },
+    {
+      "id": "str-vs-string",
+      "file": "str-vs-string.md",
+      "title": "文字列スライス &str の型",
+      "related_stages": [4]
+    },
+    {
+      "id": "function-pointers",
+      "file": "function-pointers.md",
+      "title": "関数ポインタ",
+      "related_stages": [4]
+    },
+    {
+      "id": "loop-return-value",
+      "file": "loop-return-value.md",
+      "title": "loopから値を返す",
+      "related_stages": [5]
+    },
+    {
+      "id": "infinite-loop-choice",
+      "file": "infinite-loop-choice.md",
+      "title": "無限ループの使い分け",
+      "related_stages": [5]
+    },
+    {
+      "id": "for-enumerate",
+      "file": "for-enumerate.md",
+      "title": "forループの詳細",
+      "related_stages": [5]
+    },
+    {
+      "id": "match-destructuring",
+      "file": "match-destructuring.md",
+      "title": "matchでの分解",
+      "related_stages": [5]
+    },
+    {
+      "id": "match-guards",
+      "file": "match-guards.md",
+      "title": "ガード（条件付きマッチ）",
+      "related_stages": [5]
+    },
+    {
+      "id": "self-variants",
+      "file": "self-variants.md",
+      "title": "self, &self, &mut selfの違い",
+      "related_stages": [6]
+    },
+    {
+      "id": "associated-vs-method",
+      "file": "associated-vs-method.md",
+      "title": "関連関数とメソッドの違い",
+      "related_stages": [6]
+    },
+    {
+      "id": "multiple-impl-blocks",
+      "file": "multiple-impl-blocks.md",
+      "title": "複数のimplブロック",
+      "related_stages": [6]
+    },
+    {
+      "id": "debug-print-struct",
+      "file": "debug-print-struct.md",
+      "title": "構造体へのデバッグプリント",
+      "related_stages": [6]
+    },
+    {
+      "id": "struct-ownership",
+      "file": "struct-ownership.md",
+      "title": "構造体の所有権と借用",
+      "related_stages": [6]
+    }
+  ]
+}

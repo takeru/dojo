@@ -1,0 +1,9 @@
+# SpecStory explanation file
+.specstory/.what-is-this.md
+
+# Cursor IDE
+.cursorindexingignore
+
+# Student workspace - everything except .gitkeep
+workspace/*
+!workspace/.gitkeep

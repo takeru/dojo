@@ -1,0 +1,48 @@
+{
+  "id": "rust-ownership-dojo",
+  "name": "Rust所有権道場",
+  "description": "Rustの最重要概念である所有権システムを集中的に学ぶコース",
+  "language": "rust",
+  "difficulty": "intermediate",
+  "version": "1.0.0",
+  "estimated_hours": 15,
+  "prerequisites": ["rust-basics"],
+  "total_stages": 3,
+  "stages": [
+    {
+      "stage": 1,
+      "file": "stage1-ownership.md",
+      "title": "所有権"
+    },
+    {
+      "stage": 2,
+      "file": "stage2-borrowing.md",
+      "title": "借用"
+    },
+    {
+      "stage": 3,
+      "file": "stage3-lifetimes.md",
+      "title": "ライフタイム基礎"
+    }
+  ],
+  "topics": [
+    {
+      "id": "ownership-deep-dive",
+      "file": "ownership-deep-dive.md",
+      "title": "所有権の詳細とムーブセマンティクス",
+      "related_stages": [1]
+    },
+    {
+      "id": "borrow-checker",
+      "file": "borrow-checker.md",
+      "title": "借用チェッカーの仕組み",
+      "related_stages": [2]
+    },
+    {
+      "id": "lifetime-elision",
+      "file": "lifetime-elision.md",
+      "title": "ライフタイム省略規則",
+      "related_stages": [3]
+    }
+  ]
+}

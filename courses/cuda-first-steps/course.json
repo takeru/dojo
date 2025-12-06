@@ -1,0 +1,224 @@
+{
+  "id": "cuda-first-steps",
+  "name": "CUDA書いたことない人集まれ",
+  "description": "CUDAプログラミングの基礎を体験しながら学ぶコース。CPU vs GPUの速度差を実感し、並列計算の楽しさを知る。",
+  "language": "cuda",
+  "difficulty": "intermediate",
+  "version": "1.0.0",
+  "estimated_hours": 10,
+  "prerequisites": [],
+  "total_stages": 7,
+  "stages": [
+    {
+      "stage": 1,
+      "file": "stage1-hello-gpu.md",
+      "title": "環境構築と Hello GPU"
+    },
+    {
+      "stage": 2,
+      "file": "stage2-cpu-vs-gpu.md",
+      "title": "CPUとGPUで同じことをやってみる"
+    },
+    {
+      "stage": 3,
+      "file": "stage3-measure-speed.md",
+      "title": "速度を測ってみる"
+    },
+    {
+      "stage": 4,
+      "file": "stage4-vector-add.md",
+      "title": "ベクトル加算で基礎固め"
+    },
+    {
+      "stage": 5,
+      "file": "stage5-memory-transfer.md",
+      "title": "メモリ転送のコストを知る"
+    },
+    {
+      "stage": 6,
+      "file": "stage6-threads-blocks.md",
+      "title": "スレッドとブロックを理解する"
+    },
+    {
+      "stage": 7,
+      "file": "stage7-matrix-multiply.md",
+      "title": "行列積で本気を出す"
+    }
+  ],
+  "topics": [
+    {
+      "id": "nvcc-basics",
+      "file": "nvcc-basics.md",
+      "title": "コンパイルって何してるの？nvccの裏側を覗いてみよう",
+      "related_stages": [1]
+    },
+    {
+      "id": "cuda-toolkit-tour",
+      "file": "cuda-toolkit-tour.md",
+      "title": "インストールしたCUDA、実は何が入ってる？探検してみよう",
+      "related_stages": [1]
+    },
+    {
+      "id": "visual-profiling",
+      "file": "visual-profiling.md",
+      "title": "自分のプログラムがどう動いてるか見てみよう（Nsight入門）",
+      "related_stages": [7]
+    },
+    {
+      "id": "memory-playground",
+      "file": "memory-playground.md",
+      "title": "GPUの記憶の仕組み：グローバルとシェアードメモリで遊んでみる",
+      "related_stages": [5, 6]
+    },
+    {
+      "id": "easy-memory-management",
+      "file": "easy-memory-management.md",
+      "title": "面倒なメモリ管理をサボる方法（Unified Memory）",
+      "related_stages": [5]
+    },
+    {
+      "id": "fast-memory-transfer",
+      "file": "fast-memory-transfer.md",
+      "title": "データ転送を爆速にする裏ワザ（Pinned Memory）",
+      "related_stages": [5]
+    },
+    {
+      "id": "memory-access-tricks",
+      "file": "memory-access-tricks.md",
+      "title": "メモリの読み方次第で10倍速くなる話",
+      "related_stages": [7]
+    },
+    {
+      "id": "how-gpu-runs",
+      "file": "how-gpu-runs.md",
+      "title": "GPUって何千個のスレッドをどうやって動かしてるの？",
+      "related_stages": [6]
+    },
+    {
+      "id": "if-statement-trap",
+      "file": "if-statement-trap.md",
+      "title": "GPUでif文を使うと遅くなる？Warp分岐の罠",
+      "related_stages": [6]
+    },
+    {
+      "id": "tuning-basics",
+      "file": "tuning-basics.md",
+      "title": "なんかまだ遅い…そんな時のチューニング入門",
+      "related_stages": [7]
+    },
+    {
+      "id": "sum-it-up",
+      "file": "sum-it-up.md",
+      "title": "全要素の合計を超高速で計算する（Reductionパターン）",
+      "related_stages": [4, 7]
+    },
+    {
+      "id": "multiple-tasks",
+      "file": "multiple-tasks.md",
+      "title": "GPUに複数の仕事を同時にさせる（Streams）",
+      "related_stages": [5]
+    },
+    {
+      "id": "matrix-speedup",
+      "file": "matrix-speedup.md",
+      "title": "行列積をさらに10倍速くする（タイリング手法）",
+      "related_stages": [7]
+    },
+    {
+      "id": "debugging-cuda",
+      "file": "debugging-cuda.md",
+      "title": "GPUのバグってどう見つけるの？エラー処理の基本",
+      "related_stages": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
+      "id": "rookie-mistakes",
+      "file": "rookie-mistakes.md",
+      "title": "みんなここでハマる！CUDA初心者あるある集",
+      "related_stages": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
+      "id": "global-keyword",
+      "file": "global-keyword.md",
+      "title": "__global__ って何？CPUとGPUの関数の違い",
+      "related_stages": [1]
+    },
+    {
+      "id": "kernel-launch-syntax",
+      "file": "kernel-launch-syntax.md",
+      "title": "<<<>>> ってなんでこんな書き方なの？",
+      "related_stages": [1]
+    },
+    {
+      "id": "separate-memory-spaces",
+      "file": "separate-memory-spaces.md",
+      "title": "CPUとGPUはメモリが別！だから転送が必要",
+      "related_stages": [2]
+    },
+    {
+      "id": "parallel-vs-loop",
+      "file": "parallel-vs-loop.md",
+      "title": "なんでforループが消えるの？並列処理の発想",
+      "related_stages": [2]
+    },
+    {
+      "id": "bounds-checking",
+      "file": "bounds-checking.md",
+      "title": "if (idx < n) って何してるの？配列範囲チェック",
+      "related_stages": [2]
+    },
+    {
+      "id": "memcpy-direction",
+      "file": "memcpy-direction.md",
+      "title": "転送の方向を間違えるとどうなる？",
+      "related_stages": [2]
+    },
+    {
+      "id": "gpu-overhead",
+      "file": "gpu-overhead.md",
+      "title": "なぜ小さいデータではGPUが遅いの？",
+      "related_stages": [3]
+    },
+    {
+      "id": "transfer-vs-compute",
+      "file": "transfer-vs-compute.md",
+      "title": "転送と計算、どっちに時間かかってる？",
+      "related_stages": [3]
+    },
+    {
+      "id": "device-synchronize",
+      "file": "device-synchronize.md",
+      "title": "cudaDeviceSynchronize() って何してるの？",
+      "related_stages": [3, 5]
+    },
+    {
+      "id": "why-blocksize-256",
+      "file": "why-blocksize-256.md",
+      "title": "なぜblockSize=256がよく使われるの？",
+      "related_stages": [4]
+    },
+    {
+      "id": "gridsize-ceiling",
+      "file": "gridsize-ceiling.md",
+      "title": "gridSizeの切り上げ計算って何やってるの？",
+      "related_stages": [4]
+    },
+    {
+      "id": "minimize-transfer",
+      "file": "minimize-transfer.md",
+      "title": "入出力の転送を最小限にするコツ",
+      "related_stages": [4]
+    },
+    {
+      "id": "pcie-bottleneck",
+      "file": "pcie-bottleneck.md",
+      "title": "なぜ転送は遅いの？PCIeのボトルネック",
+      "related_stages": [5]
+    },
+    {
+      "id": "reduce-transfer-strategies",
+      "file": "reduce-transfer-strategies.md",
+      "title": "転送を減らす5つの方法",
+      "related_stages": [5]
+    }
+  ]
+}
