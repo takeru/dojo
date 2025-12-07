@@ -1,0 +1,81 @@
+{
+  "id": "metal-first-steps",
+  "name": "MacでGPUプログラミング入門",
+  "description": "Apple MetalでGPUプログラミングの基礎を体験。NVIDIAなしでもMacがあれば今すぐ始められる！Swift + Metal Shading Languageでコンピュートシェーダを書いて、GPUの並列計算パワーを実感しよう。",
+  "language": "swift",
+  "difficulty": "intermediate",
+  "version": "1.0.0",
+  "estimated_hours": 8,
+  "prerequisites": [],
+  "total_stages": 6,
+  "stages": [
+    {
+      "stage": 1,
+      "file": "stage1-environment.md",
+      "title": "Metal環境セットアップ"
+    },
+    {
+      "stage": 2,
+      "file": "stage2-first-compute.md",
+      "title": "最初のCompute Shader（配列の2倍）"
+    },
+    {
+      "stage": 3,
+      "file": "stage3-cpu-vs-gpu.md",
+      "title": "CPU vs GPU速度比較"
+    },
+    {
+      "stage": 4,
+      "file": "stage4-threadgroups.md",
+      "title": "スレッドグループとディスパッチ"
+    },
+    {
+      "stage": 5,
+      "file": "stage5-image-processing.md",
+      "title": "画像処理（グレースケール変換）"
+    },
+    {
+      "stage": 6,
+      "file": "stage6-matrix-multiply.md",
+      "title": "行列演算でニューラルネット風計算"
+    }
+  ],
+  "topics": [
+    {
+      "id": "metal-vs-cuda",
+      "file": "metal-vs-cuda.md",
+      "title": "MetalとCUDAの違い",
+      "related_stages": [1]
+    },
+    {
+      "id": "msl-basics",
+      "file": "msl-basics.md",
+      "title": "Metal Shading Language入門",
+      "related_stages": [2]
+    },
+    {
+      "id": "buffer-management",
+      "file": "buffer-management.md",
+      "title": "バッファとメモリ管理",
+      "related_stages": [2, 3]
+    },
+    {
+      "id": "threadgroup-memory",
+      "file": "threadgroup-memory.md",
+      "title": "Threadgroupメモリで高速化",
+      "related_stages": [4, 6]
+    },
+    {
+      "id": "texture-processing",
+      "file": "texture-processing.md",
+      "title": "テクスチャ処理の基礎",
+      "related_stages": [5]
+    },
+    {
+      "id": "performance-tips",
+      "file": "performance-tips.md",
+      "title": "Metalパフォーマンスチューニング",
+      "related_stages": [6]
+    }
+  ]
+}
